@@ -20,10 +20,25 @@ https://templatemo.com/tm-536-dream-pulse
     <link rel="stylesheet" href="slick/slick-theme.css"/>    
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/templatemo-dream-pulse.css" />
+    <!-- github -->
+<link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css">
+<link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
+
+<script type="text/javascript" src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+
+<!-- if using dark theme add this in addition to the main CSS file -->
+<link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
+    
     <style>
     	.tm-gallery-item{
     		width: 50%;
     	}
+    	 #feed {
+	    width: 700px;
+	    height: 600px;
+	    margin: 30px 0;
+	  }
     </style>
     <!-- Latest compiled and minified CSS -->
 <!-- jQuery library -->
@@ -155,61 +170,92 @@ https://templatemo.com/tm-536-dream-pulse
                     <p> 1995.3.4 </p>
                     <h4 class="tm-color-primary">Phone</h4>
                     <p>	<!-- 010-4909-0567 --> </p>
-                    <h4 class="tm-color-primary">Github</h4>
-                    <p>	https://github.com/briana9504 </p>
-                    
-                </div>
-              </div>
-            </section>
-          </div>
-          
-          <div class="tm-section-wrap bg-white">
-            <section id="education" class="row tm-section">
-            	
-              <div class="col-xl-6">
-                <div class="tm-section-half">
-                	<h2 class="tm-color-primary mb-5">Education</h2>
-                	<p>
-                	</p>
-                     <p>
+                    <h4 class="tm-color-primary">Education</h4>
+                    <p>
                       순천대학교 물리교육과
-                      <br> 2014 ~ 2018
+                      2014 ~ 2018
                     </p>
                     <p>
                     	구디아카데미 Java/Spring 기반 SW개발자
                     	<br> 2021.3.2 ~ 2021.8.10
-                    </p>      
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="tm-section-half">
-                	<h2 class="tm-color-primary mb-5">Certificate</h2>
-                    <p> 정보처리기사
-                    	<br>필기합격
-                    </p>
-                    <p> 운전면허
-                    	<br> 2종보통
-                    </p>
+                    </p>  
+                    
+                    
                     
                 </div>
               </div>
+              <div class="col-12">
+              	<h2 class="tm-section-title tm-color-primary mb-5">github</h2>
+              	<p><a href="https://github.com/briana9504">github.com/briana9504</a>	 </p>
+               	 <div>
+		          	<div id="feed"></div>
+		          </div>
+              </div>
             </section>
           </div>
+          
             
           <div class="tm-section-wrap bg-white">
             <section id="work" class="row tm-section">
           	 	
-          	 	 <div class="col-xl-6">
+          	 	 <div class="col-xl-12">
           	 	 	<h2 class="tm-section-title tm-color-primary mb-5">project</h2>
-          	 	 	<div><img class="project-img col-sm-12" src="img/sakila.png" alt="image"></div>
-          	 	 	<br>
-          	 	 	<div><b>기간 :</b> 2021.5.12 ~ 2021.6.18</div>
-          	 	 	<div><b>도구 :</b> STS</div>
-          	 	 	<div><b>언어 :</b> Java, JavaScript, HTML, SQL, CSS</div>
-          	 	 	<div><b>&nbsp;DB :</b> mariaDB </div>
-          	 	 	<div><b>설명 :</b> 스프링 프레임워크를 사용하여 만든 첫 프로젝트입니다.
-          	 	 			영화 대여점 프로그램으로 영화, 재고, 손님, 직원 등의 정보 및 사진을 등록 관리하고
-          	 	 			영화를 대여/반납하며 차트를 이용하여 달별,일별, 장르별 매출을 보여줍니다.</div>                   
+          	 	 	<h5>비디오 대여점 관리 프로그램</h5>
+          	 	 	<div>
+          	 	 		<div class="col-xl-10">
+          	 	 			<a href="http://13.209.20.100/sakila/">
+	          	 	 			<img class="project-img col-sm-12" src="img/sakila.png" alt="image">
+	          	 	 		</a>
+          	 	 		</div>
+          	 	 		
+          	 	 	</div>
+          	 	 	<div style="margin: 2%;">
+          	 	 		<button class="btn btn-outline-secondary"><a href="./file/sakila.pdf">기능 정의서</a></button>
+   	 	 				<button class="btn btn-outline-secondary"><a href="">ERD</a></button>
+   	 	 				<button class="btn btn-outline-secondary"><a href="https://github.com/briana9504/sakila">github</a></button>
+   	 	 				<button class="btn btn-outline-secondary"><a href="http://13.209.20.100/sakila/">서비스 url</a></button>
+          	 	 	</div>
+          	 	 	
+         	 	 	<table class="table table-sm">
+          	 	 		<tr>
+          	 	 			<th colspan="2" class="text-center">프로젝트 개발 환경</th>
+          	 	 		</tr>
+          	 	 		<tr>
+          	 	 			<th>OS</th>
+          	 	 			<td>Window 10</td>
+          	 	 		</tr>
+          	 	 		<tr>
+          	 	 			<th>언어</th>
+          	 	 			<td><b>Back-end</b>: Oracle JDK 1.8
+          	 	 				<br>
+          	 	 				<b>Front-end</b>: HTML5, CSS3, bootstrap, JavaScript, jquery
+          	 	 			</td>
+          	 	 		</tr>
+          	 	 		<tr>
+          	 	 			<th>라이브러리</th>
+          	 	 			<td></td>
+          	 	 		</tr>
+          	 	 		<tr>
+          	 	 			<th>DBMS</th>
+          	 	 			<td>mariaDB</td>
+          	 	 		</tr>
+          	 	 		<tr>
+          	 	 			<th>IDE</th>
+          	 	 			<td>sts4</td>
+          	 	 		</tr>
+          	 	 		<tr>
+          	 	 			<th colspan="2" class="text-center">서비스환경</th>
+          	 	 		</tr>
+          	 	 		<tr>
+          	 	 			<th>OS</th>
+          	 	 			<td>Ubuntu 16.04.4 LTS</td>
+          	 	 		</tr>
+          	 	 		<tr>
+          	 	 			<th>실행환경</th>
+          	 	 			<td>구글 크롬브라우즈에 최적화</td>
+          	 	 		</tr>	
+          	 	 	</table>
+          	 	 			                   
              	 </div>
              	 
              	          
@@ -286,6 +332,11 @@ https://templatemo.com/tm-536-dream-pulse
                 </div>               
               </section>
           </div>
+          
+          
+         
+          
+          
         </main>        
       </div>
     </main>
@@ -295,5 +346,14 @@ https://templatemo.com/tm-536-dream-pulse
     <script src="slick/slick.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/templatemo-scripts.js"></script>
+    <script>
+    GitHubActivity.feed({
+  	  username: "briana9504",
+  	 // repository: "sakila", // optional
+  	  selector: "#feed",
+  	  limit: 20, // optional
+  	});
+  
+    </script>
   </body>
 </html>
